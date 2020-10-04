@@ -1,0 +1,145 @@
+/* default body styles */
+body {
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.575);
+}
+
+nav ul {
+  margin: 0px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: left;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#nav img {
+  width: 30px;
+  height: 30px;
+  padding: 10px 120px 10px 120px;
+}
+
+.showcase::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url(./backdrop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transition: all 1000ms;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 80%;
+  margin-top: 105px;
+  margin-left: -146px;
+  width: 300px;
+  height: 350px;
+  text-align: right;
+  transtion: all 1000ms;
+}
+
+.content p {
+  text-align: left;
+}
+
+/* button  design */
+.content button {
+  background: none;
+  color: #ccc;
+  width: 140px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 15px;
+  border: 2px solid #628b61;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.6s;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+#services {
+  background: #825444;
+}
+
+.grid-3 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div .test {
+  padding: 19.2px 1rem;
+}
+
+.grid-3 .test:hover {
+  padding: 19.2px 1rem;
+  /* margin: 1rem; */
+  border: 1px dashed;
+  transition: all 1000ms;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  margin-left: 5px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #628b61;
+  color: #f4f4f4;
+}
+
+footer {
+  padding: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
